@@ -1,15 +1,24 @@
-import './App.css'
-import Navbar from './Components/Navbar/Navbar';
+import { useContext } from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import SearchBar from "./Components/SearchBar/SearchBar";
+import { ThemeContext } from "./Components/Theme/ThemeContext";
 
 function App() {
-  
-
+  const { darkMode } = useContext(ThemeContext);
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Navbar />
+      <main
+        className={darkMode ? "dark-Mode h-screen pt-32" : "h-screen pt-32"}
+      >
+        <div>
+          <Navbar />
+        </div>
+        <div>
+          <SearchBar />
+        </div>
+      </main>
     </>
   );
 }
 
-export default App
+export default App;
