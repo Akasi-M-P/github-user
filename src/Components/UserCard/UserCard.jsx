@@ -1,0 +1,66 @@
+const UserCard = () => {
+  return (
+    <main className="w-1/2 mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
+      <section className="flex flex-col  w-full justify-between mx-auto px-10 py-10">
+        <div className="flex h-20">
+          <div>
+            <img
+              src="https://avatars.githubusercontent.com/u/118350559?v=4"
+              alt="user_img"
+              className="w-28 h-24 rounded-full object-cover"
+            />
+          </div>
+          <div className="w-full flex flex-row justify-between px-12">
+            <div>
+              <p className="text-blue-800 font-mono text-26 font-bold leading-normal">
+                the codeVersa
+              </p>
+              <p className="text-blue-500 font-mono text-base font-normal leading-normal">
+                @akasi-mp
+              </p>
+            </div>
+            <div>
+              <p className="text-blue-600 font-mono text-base font-normal leading-6">
+                Joined Jan 06 2023
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-9/12 relative left-36">
+          <p className="text-blue-600 font-mono text-base font-normal leading-6">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros.
+          </p>
+        </div>
+      </section>
+      <section className="w-2/3 relative left-12 mx-auto flex px-8 py-4 items-start gap-32 h-85 rounded-lg bg-blue-100">
+        <div>
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            Repos
+          </p>
+          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+            57
+          </p>
+        </div>
+        <div>
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            Followers
+          </p>
+          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+            4578
+          </p>
+        </div>
+        <div>
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            Following
+          </p>
+          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+            23
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+};
+export default UserCard;

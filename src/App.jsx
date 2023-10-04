@@ -2,19 +2,25 @@ import { useContext } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import { ThemeContext } from "./Components/Theme/ThemeContext";
+import UserCard from "./Components/UserCard/UserCard";
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
   return (
     <>
       <main
-        className={darkMode ? "dark-Mode h-screen pt-32" : "h-screen pt-32"}
+        className={
+          darkMode ? "dark-Mode h-screen pt-14" : "h-screen bg-blue-100 pt-14"
+        }
       >
         <div>
           <Navbar />
         </div>
         <div>
           <SearchBar />
+        </div>
+        <div>
+          <UserCard />
         </div>
       </main>
     </>

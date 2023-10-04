@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { ThemeContext } from "../Theme/ThemeContext";
 
 const SearchBar = () => {
   const { darkMode } = useContext(ThemeContext);
+  const [userName, setUserName] = useState("");
+
+  const handleUserName = (e) => {
+    setUserName(e.target.value);
+  };
 
   return (
     <main
@@ -18,12 +23,13 @@ const SearchBar = () => {
         <input
           type="text"
           name="userName"
-          value=""
+          value={userName}
+          onChange={handleUserName}
           placeholder="Search Github username..."
           className={
             darkMode
               ? "w-10/12 h-8 focus:outline-none text-white font-mono text-base font-normal leading-6 bg-blue-900"
-              : "w-10/12 h-8 focus:outline-none text-blue-600 font-mono text-base font-normal leading-6"
+              : "w-10/12 h-8 focus:outline-none text-black font-mono text-base font-normal leading-6"
           }
         />
       </section>
@@ -33,7 +39,7 @@ const SearchBar = () => {
         </p>
         <button
           type="btn"
-          className="w-20 h-50 pt-2 pb-2 rounded-lg bg-blue-500"
+          className="w-20 h-50 pt-2 pb-2 rounded-lg bg-blue-500 hover:bg-blue-400"
         >
           <p className="text-white font-mono text-16 font-bold leading-normal">
             Search
