@@ -10,7 +10,9 @@ function App() {
     <>
       <main
         className={
-          darkMode ? "dark-Mode h-screen pt-8" : "h-screen bg-blue-100 pt-8"
+          darkMode
+            ? "dark-Mode h-screen pt-8 pb-5"
+            : "h-screen bg-blue-100 pt-8 pb-5"
         }
       >
         <div className="px-5">
