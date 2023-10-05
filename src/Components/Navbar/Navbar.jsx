@@ -5,7 +5,7 @@ import { ThemeContext } from "../Theme/ThemeContext";
 const Navbar = () => {
   const { darkMode, enableDarkMode } = useContext(ThemeContext);
   return (
-    <main className="sm:w-1/2 flex items-center justify-between mx-auto">
+    <main className="sm:w-1/2 md:w-11/12 flex items-center justify-between mx-auto">
       <section>
         <p
           className={
