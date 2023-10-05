@@ -14,8 +14,8 @@ const SearchBar = () => {
     <main
       className={
         darkMode
-          ? "sm:w-1/2 flex items-center justify-between mx-auto rounded-lg bg-blue-900 shadow-md p-4 mt-10"
-          : "sm:w-1/2 flex items-center justify-between mx-auto rounded-lg bg-white shadow-md p-4 mt-10"
+          ? "sm:w-1/2 flex items-center justify-between mx-auto rounded-lg bg-blue-900 shadow-md p-4 mt-6"
+          : "sm:w-1/2 flex items-center justify-between mx-auto rounded-lg bg-white shadow-md p-4 mt-6"
       }
     >
       <section className="flex gap-5 items-center sm:w-3/4">
