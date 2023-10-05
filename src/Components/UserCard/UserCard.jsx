@@ -38,7 +38,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative gap-10 flex px-8 py-8 items-center justify-center rounded-lg bg-blue-100">
+      <section className="w-10/12 mx-auto relative gap-10 flex px-10 py-8 items-center justify-center rounded-lg bg-blue-100">
         <div>
           <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Repos
@@ -67,25 +67,25 @@ const UserCard = () => {
       <section className="w-10/12 mx-auto relative grid grid-cols-1 gap-4 py-10 items-start">
         <div className="flex items-center gap-2">
           <FaLocationDot />
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Accra, Ghana
           </p>
         </div>
         <div className="flex items-center gap-2">
           <FaTwitter />
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Not Available
           </p>
         </div>
         <div className="flex items-center gap-2">
           <BsLink45Deg />
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             https://github.blog
           </p>
         </div>
         <div className="flex items-center gap-2">
           <HiBuildingOffice2 />
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             @github
           </p>
         </div>
