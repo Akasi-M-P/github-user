@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
-    <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-7">
+    <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-5">
       <section className="flex flex-col sm:w-full justify-between mx-auto px-10 py-10">
         <div className="flex items-center">
           <div className="">
