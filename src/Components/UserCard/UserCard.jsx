@@ -63,7 +63,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative grid grid-cols-1 gap-4 py-10 items-start">
+      <section className="w-10/12 mx-auto relative grid grid-cols-1 gap-4 py-8 items-start">
         <div className="flex items-center gap-2">
           <FaLocationDot />
           <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
