@@ -28,8 +28,8 @@ const SearchBar = () => {
           placeholder="Search Github username..."
           className={
             darkMode
-              ? "sm:w-10/12 h-8 focus:outline-none text-white font-mono text-base font-normal leading-6 bg-blue-900"
-              : "sm:w-10/12 h-8 focus:outline-none text-black font-mono text-base font-normal leading-6"
+              ? "sm:w-10/12 h-8 focus:outline-none text-white font-mono text-sm font-normal leading-6 bg-blue-900"
+              : "sm:w-10/12 h-8 focus:outline-none text-black font-mono text-sm font-normal leading-6"
           }
         />
       </section>

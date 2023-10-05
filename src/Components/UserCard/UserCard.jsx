@@ -16,10 +16,10 @@ const UserCard = () => {
           </div>
           <div className="w-2/3 flex flex-col px-12">
             <div>
-              <p className="text-blue-800 font-mono text-26 font-bold leading-normal">
+              <p className="text-blue-800 font-mono text-lg font-bold leading-normal">
                 the_codeVersa
               </p>
-              <p className="text-blue-500 font-mono text-base font-normal leading-normal">
+              <p className="text-blue-500 font-mono text-xs font-normal leading-normal">
                 @akasi-mp
               </p>
             </div>
