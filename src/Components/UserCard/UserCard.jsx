@@ -7,7 +7,7 @@ const UserCard = () => {
     <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
       <section className="flex flex-col sm:w-full justify-between mx-auto px-10 py-10">
         <div className="flex items-center">
-          <div className="">
+          <div className="w-32">
             <img
               src="https://avatars.githubusercontent.com/u/118350559?v=4"
               alt="user_img"
