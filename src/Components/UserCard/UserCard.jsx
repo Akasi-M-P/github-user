@@ -38,7 +38,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative gap-16 flex px-6 py-6 items-center justify-center rounded-lg bg-blue-100">
+      <section className="w-10/12 mx-auto relative gap-10 flex px-6 py-6 items-center justify-center rounded-lg bg-blue-100">
         <div>
           <p className="text-blue-600 font-mono text-base font-normal leading-normal">
             Repos
