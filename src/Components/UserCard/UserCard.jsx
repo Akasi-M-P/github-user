@@ -38,28 +38,28 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative gap-10 flex px-6 py-6 items-center justify-center rounded-lg bg-blue-100">
+      <section className="w-10/12 mx-auto relative gap-10 flex px-8 py-8 items-center justify-center rounded-lg bg-blue-100">
         <div>
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Repos
           </p>
-          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-lg font-bold leading-normal uppercase">
             57
           </p>
         </div>
         <div>
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Followers
           </p>
-          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-lg font-bold leading-normal uppercase">
             4578
           </p>
         </div>
         <div>
-          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-normal">
             Following
           </p>
-          <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-lg font-bold leading-normal uppercase">
             23
           </p>
         </div>
