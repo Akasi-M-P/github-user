@@ -14,7 +14,7 @@ const UserCard = () => {
               className="w-24 h-24 rounded-full object-cover"
             />
           </div>
-          <div className="w-2/3 flex flex-col px-12">
+          <div className="w-2/3 flex flex-col px-5">
             <div>
               <p className="text-blue-800 font-mono text-lg font-bold leading-normal">
                 the_codeVersa
@@ -30,8 +30,7 @@ const UserCard = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-full relative mb-5 mt-10">
+        <div className="w-full relative mt-5">
           <p className="text-blue-600 font-mono text-base font-normal leading-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
