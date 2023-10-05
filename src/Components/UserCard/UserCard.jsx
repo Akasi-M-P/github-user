@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
-    <main className="sm:w-1/2 mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
+    <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
       <section className="flex flex-col  sm:w-full justify-between mx-auto px-10 py-10">
         <div className="flex h-20">
           <div>
@@ -31,14 +31,14 @@ const UserCard = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="w-full relative mb-5 mt-10">
           <p className="text-blue-600 font-mono text-base font-normal leading-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>
         </div>
       </section>
-      <section className="sm:w-2/3 mx-auto flex px-8 py-4 items-start h-85 rounded-lg bg-blue-100">
+      <section className="w-10/12 mx-auto relative gap-2 flex px-8 py-4 items-start rounded-lg bg-blue-100">
         <div>
           <p className="text-blue-600 font-mono text-base font-normal leading-normal">
             Repos
@@ -64,7 +64,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="sm:w-2/3 relative left-12 mx-auto grid grid-cols-2 gap-4 py-10 items-start">
+      <section className="w-10/12 mx-auto relative grid grid-cols-1 gap-4 py-10 items-start">
         <div className="flex items-center gap-2">
           <FaLocationDot />
           <p className="text-blue-600 font-mono text-base font-normal leading-normal">
