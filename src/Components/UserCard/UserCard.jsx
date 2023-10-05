@@ -5,26 +5,26 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
     <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
-      <section className="flex flex-col  sm:w-full justify-between mx-auto px-10 py-10">
-        <div className="flex h-20">
-          <div>
+      <section className="flex flex-col sm:w-full justify-between mx-auto px-10 py-10">
+        <div className="flex items-center">
+          <div className="">
             <img
               src="https://avatars.githubusercontent.com/u/118350559?v=4"
               alt="user_img"
-              className="w-28 h-24 rounded-full object-cover"
+              className="w-28 h-28 rounded-full object-cover"
             />
           </div>
-          <div className="w-full flex flex-row justify-between px-12">
+          <div className="w-2/3 flex flex-col px-12">
             <div>
               <p className="text-blue-800 font-mono text-26 font-bold leading-normal">
-                the codeVersa
+                the_codeVersa
               </p>
               <p className="text-blue-500 font-mono text-base font-normal leading-normal">
                 @akasi-mp
               </p>
             </div>
             <div>
-              <p className="text-blue-600 font-mono text-base font-normal leading-6">
+              <p className="text-blue-600 font-mono text-xs font-normal leading-6">
                 Joined Jan 06 2023
               </p>
             </div>
@@ -38,7 +38,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative gap-2 flex px-8 py-4 items-start rounded-lg bg-blue-100">
+      <section className="w-10/12 mx-auto relative gap-16 flex px-6 py-6 items-center justify-center rounded-lg bg-blue-100">
         <div>
           <p className="text-blue-600 font-mono text-base font-normal leading-normal">
             Repos
