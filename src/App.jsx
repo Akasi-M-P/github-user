@@ -13,13 +13,13 @@ function App() {
           darkMode ? "dark-Mode h-screen pt-14" : "h-screen bg-blue-100 pt-14"
         }
       >
-        <div>
+        <div className="px-5">
           <Navbar />
         </div>
-        <div>
+        <div className="px-5">
           <SearchBar />
         </div>
-        <div>
+        <div className="px-5">
           <UserCard />
         </div>
       </main>
