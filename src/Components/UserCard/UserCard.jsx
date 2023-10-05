@@ -31,7 +31,7 @@ const UserCard = () => {
           </div>
         </div>
         <div className="w-full relative mt-5">
-          <p className="text-blue-600 font-mono text-base font-normal leading-6">
+          <p className="text-blue-600 font-mono text-sm font-normal leading-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>

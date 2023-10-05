@@ -18,8 +18,8 @@ const SearchBar = () => {
           : "sm:w-1/2 flex items-center justify-between mx-auto rounded-lg bg-white shadow-md p-4 mt-6"
       }
     >
-      <section className="flex gap-5 items-center sm:w-3/4">
-        <FiSearch className="w-7 h-7 text-blue-500" />
+      <section className="flex gap-5 items-center w-3/4">
+        <FiSearch className="w-5 h-5 text-blue-500" />
         <input
           type="text"
           name="userName"
@@ -28,8 +28,8 @@ const SearchBar = () => {
           placeholder="Search Github username..."
           className={
             darkMode
-              ? "sm:w-10/12 h-8 focus:outline-none text-white font-mono text-sm font-normal leading-6 bg-blue-900"
-              : "sm:w-10/12 h-8 focus:outline-none text-black font-mono text-sm font-normal leading-6"
+              ? "w-10/12 h-8 focus:outline-none text-white font-mono text-sm font-normal leading-6 bg-blue-900"
+              : "w-10/12 h-8 focus:outline-none text-black font-mono text-sm font-normal leading-6"
           }
         />
       </section>
