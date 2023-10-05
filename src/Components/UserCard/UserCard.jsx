@@ -7,11 +7,11 @@ const UserCard = () => {
     <main className="sm:w-full mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
       <section className="flex flex-col sm:w-full justify-between mx-auto px-10 py-10">
         <div className="flex items-center">
-          <div className="w-32">
+          <div className="">
             <img
               src="https://avatars.githubusercontent.com/u/118350559?v=4"
               alt="user_img"
-              className="w-28 h-28 rounded-full object-cover"
+              className="w-24 h-24 rounded-full object-cover"
             />
           </div>
           <div className="w-2/3 flex flex-col px-12">
