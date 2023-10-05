@@ -1,7 +1,11 @@
+import { FaLocationDot } from "react-icons/fa6";
+import { BsLink45Deg } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
+import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
-    <main className="w-1/2 mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
-      <section className="flex flex-col  w-full justify-between mx-auto px-10 py-10">
+    <main className="sm:w-1/2 mx-auto  rounded-lg bg-white shadow-xl mt-12 ">
+      <section className="flex flex-col  sm:w-full justify-between mx-auto px-10 py-10">
         <div className="flex h-20">
           <div>
             <img
@@ -27,14 +31,14 @@ const UserCard = () => {
           </div>
         </div>
 
-        <div className="w-9/12 relative left-36">
+        <div className="">
           <p className="text-blue-600 font-mono text-base font-normal leading-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>
         </div>
       </section>
-      <section className="w-2/3 relative left-12 mx-auto flex px-8 py-4 items-start gap-32 h-85 rounded-lg bg-blue-100">
+      <section className="mx-auto flex px-8 py-4 items-start gap-32 h-85 rounded-lg bg-blue-100">
         <div>
           <p className="text-blue-600 font-mono text-base font-normal leading-normal">
             Repos
@@ -57,6 +61,32 @@ const UserCard = () => {
           </p>
           <p className="text-blue-900 font-mono text-22 font-bold leading-normal uppercase">
             23
+          </p>
+        </div>
+      </section>
+      <section className="sm:w-2/3 relative left-12 mx-auto grid grid-cols-2 gap-4 py-10 items-start">
+        <div className="flex items-center gap-2">
+          <FaLocationDot />
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            Accra, Ghana
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <FaTwitter />
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            Not Available
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <BsLink45Deg />
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            https://github.blog
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <HiBuildingOffice2 />
+          <p className="text-blue-600 font-mono text-base font-normal leading-normal">
+            @github
           </p>
         </div>
       </section>
