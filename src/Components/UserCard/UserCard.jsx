@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
-    <main className="w-11/12  md:w-11/12 mx-auto  rounded-lg bg-white shadow-xl mt-5">
+    <main className="w-11/12  md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto  rounded-lg bg-white shadow-xl mt-5">
       <section className="flex flex-col w-full md:w-11/12 justify-between mx-auto px-5 py-10">
         <div className="flex items-center md:gap-5 lg:gap-7">
           <div className="">
@@ -14,7 +14,7 @@ const UserCard = () => {
               className="w-24 h-24 lg:w-32 lg:h-32 rounded-full object-cover"
             />
           </div>
-          <div className="w-2/3 flex flex-col lg:w-3/4 lg:flex-row lg:gap-32 px-5 lg:px-0 relative lg:first-line:bottom-7">
+          <div className="w-2/3 flex flex-col lg:w-3/4 lg:flex-row lg:gap-32 px-5 lg:px-2 relative lg:bottom-5 lg:first-line:bottom-7 xl:px-9 2xl:px-14">
             <div>
               <p className="text-blue-800 font-mono text-lg md:text-xl lg:text-2xl font-bold leading-normal">
                 the_codeVersa
@@ -23,21 +23,21 @@ const UserCard = () => {
                 @akasi-mp
               </p>
             </div>
-            <div className="relative">
+            <div className="relative lg:left-20 xl:left-52">
               <p className="text-blue-600 font-mono text-xs md:text-sm lg:text-lg font-normal leading-6 ">
                 Joined Jan 06 2023
               </p>
             </div>
           </div>
         </div>
-        <div className="w-full relative mt-5 lg:w-10/12 lg:left-38 lg:px-3 lg:mt-0 lg:bottom-10">
+        <div className="w-full relative mt-5 lg:w-10/12 lg:left-32 xl:left-36 xl:px-12 lg:px-8 lg:mt-0 lg:bottom-5 2xl:left-44 2xl:px-10">
           <p className="text-blue-600 font-mono text-sm md:text-base lg:text-xl font-normal leading-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>
         </div>
       </section>
-      <section className="w-11/12 mx-auto relative lg:bottom-12 gap-10 flex px-8 py-8 md:gap-24 rounded-lg bg-blue-100 lg:w-2/3  lg:px-2 lg:mt-0 bottom-7">
+      <section className="w-11/12 mx-auto relative lg:bottom-12 gap-10 flex px-8 py-8 md:gap-24 rounded-lg bg-blue-100 lg:w-2/3  lg:px-10 lg:mt-0 bottom-7 lg:left-20">
         <div>
           <p className="text-blue-600 font-mono text-xs md:text-base font-normal leading-normal">
             Repos
