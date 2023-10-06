@@ -39,7 +39,7 @@ const SearchBar = () => {
         </p>
         <button
           type="btn"
-          className="w-20 text-sm lg:w-24 pt-2  pb-2 md:pt-3 md:pb-3 lg:pt-5 lg:pb-5 lg:px-5 lg:text-lg rounded-lg bg-blue-500 hover:bg-blue-400"
+          className="w-16 text-sm lg:w-24 pt-2  pb-2 md:pt-3 md:pb-3 lg:pt-5 lg:pb-5 lg:px-5 lg:text-lg rounded-lg bg-blue-500 hover:bg-blue-400"
         >
           <p className="text-white font-mono text-16 font-bold leading-normal">
             Search
