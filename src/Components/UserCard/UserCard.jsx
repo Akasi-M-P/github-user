@@ -5,7 +5,7 @@ import { HiBuildingOffice2 } from "react-icons/hi2";
 const UserCard = () => {
   return (
     <main className="w-11/12  md:w-11/12 mx-auto  rounded-lg bg-white shadow-xl mt-5">
-      <section className="flex flex-col w-full md:w-11/12 justify-between mx-auto px-10 py-10">
+      <section className="flex flex-col w-full md:w-11/12 justify-between mx-auto px-5 py-10">
         <div className="flex items-center md:gap-5 lg:gap-7">
           <div className="">
             <img
@@ -37,7 +37,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative lg:bottom-12 gap-10 flex px-10 py-8 md:gap-24 items-center justify-center rounded-lg bg-blue-100 lg:w-2/3  lg:px-2 lg:mt-0 bottom-7">
+      <section className="w-11/12 mx-auto relative lg:bottom-12 gap-24 flex px-8 py-8 md:gap-24 rounded-lg bg-blue-100 lg:w-2/3  lg:px-2 lg:mt-0 bottom-7">
         <div>
           <p className="text-blue-600 font-mono text-sm md:text-base font-normal leading-normal">
             Repos
@@ -63,7 +63,7 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-10/12 mx-auto relative grid grid-cols-1 md:grid-cols-2 gap-4 py-7 items-start lg:w-2/3 lg:left-20 lg:px-2 lg:mt-0 lg:bottom-7">
+      <section className="w-11/12 mx-auto relative grid grid-cols-1 md:grid-cols-2 gap-4 py-7 items-start lg:w-2/3 lg:left-20 lg:px-2 lg:mt-0 lg:bottom-7">
         <div className="flex items-center gap-2">
           <FaLocationDot />
           <p className="text-blue-600 font-mono text-sm md:text-lg font-normal leading-normal">
