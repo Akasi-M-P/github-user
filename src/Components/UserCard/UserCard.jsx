@@ -37,12 +37,12 @@ const UserCard = () => {
           </p>
         </div>
       </section>
-      <section className="w-11/12 mx-auto relative lg:bottom-12 gap-24 flex px-8 py-8 md:gap-24 rounded-lg bg-blue-100 lg:w-2/3  lg:px-2 lg:mt-0 bottom-7">
+      <section className="w-11/12 mx-auto relative lg:bottom-12 gap-16 flex px-10 py-8 md:gap-24 rounded-lg bg-blue-100 lg:w-2/3  lg:px-2 lg:mt-0 bottom-7">
         <div>
           <p className="text-blue-600 font-mono text-sm md:text-base font-normal leading-normal">
             Repos
           </p>
-          <p className="text-blue-900 font-mono text-lg md:text-xl font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-sm md:text-xl font-bold leading-normal uppercase">
             57
           </p>
         </div>
@@ -50,7 +50,7 @@ const UserCard = () => {
           <p className="text-blue-600 font-mono text-sm md:text-base font-normal leading-normal">
             Followers
           </p>
-          <p className="text-blue-900 font-mono text-lg md:text-xl font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-sm md:text-xl font-bold leading-normal uppercase">
             4578
           </p>
         </div>
@@ -58,7 +58,7 @@ const UserCard = () => {
           <p className="text-blue-600 font-mono text-sm md:text-base font-normal leading-normal">
             Following
           </p>
-          <p className="text-blue-900 font-mono text-lg md:text-xl font-bold leading-normal uppercase">
+          <p className="text-blue-900 font-mono text-sm md:text-xl font-bold leading-normal uppercase">
             23
           </p>
         </div>

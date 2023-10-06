@@ -28,8 +28,8 @@ const SearchBar = () => {
           placeholder="Search Github username..."
           className={
             darkMode
-              ? "w-10/12 h-8 focus:outline-none text-white font-mono text-sm md:text-base lg:text-xl font-normal leading-6 bg-blue-900"
-              : "w-10/12 h-8 focus:outline-none text-black font-mono text-sm md:text-base lg:text-xl font-normal leading-6"
+              ? "w-11/12 h-8 focus:outline-none text-white font-mono text-xs md:text-base lg:text-xl font-normal leading-6 bg-blue-900"
+              : "w-11/12 h-8 focus:outline-none text-black font-mono text-xs md:text-base lg:text-xl font-normal leading-6"
           }
         />
       </section>
@@ -39,7 +39,7 @@ const SearchBar = () => {
         </p>
         <button
           type="btn"
-          className="w-20 lg:w-24 pt-2  pb-2 md:pt-3 md:pb-3 lg:pt-5 lg:pb-5 lg:px-5 lg:text-lg rounded-lg bg-blue-500 hover:bg-blue-400"
+          className="w-20 text-sm lg:w-24 pt-2  pb-2 md:pt-3 md:pb-3 lg:pt-5 lg:pb-5 lg:px-5 lg:text-lg rounded-lg bg-blue-500 hover:bg-blue-400"
         >
           <p className="text-white font-mono text-16 font-bold leading-normal">
             Search
