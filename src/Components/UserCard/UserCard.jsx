@@ -1,49 +1,19 @@
-/* eslint-disable no-unused-vars */
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { ThemeContext } from "../Theme/ThemeContext";
 import { UserContext } from "../UserContext/UserContext";
-import { Octokit } from "octokit";
+import loader from "../../assets/Infinity-0.7s-71px.svg";
 
 const UserCard = () => {
+  // Get the darkMode and userData from the respective contexts
   const { darkMode } = useContext(ThemeContext);
-  const { userData, userSearched } = useContext(UserContext);
-  const [loading, setLoading] = useState(false);
+  const { userData, showLoader } = useContext(UserContext);
 
-  useEffect(() => {
-    if (!userSearched) {
-      return;
-    }
-
-    const octokit = new Octokit();
-
-    // Fetch user data
-    const fetchUserData = async () => {
-      setLoading(true);
-
-      try {
-        const response = await octokit.request(`GET /users/${userData.login}`);
-        console.log(response.data);
-        setUser(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchUserData();
-  }, [userData, userSearched]);
-
-  const setUser = (data) => {
-    // Handle setting user data here
-    console.log("User data:", data);
-  };
-
-  if (!userSearched) {
+  // If userData is not available, display a loading message or "No User Available"
+  if (!userData) {
     return (
       <main
         className={`w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto  rounded-lg ${
@@ -55,23 +25,28 @@ const UserCard = () => {
             darkMode ? "text-white" : "text-blue-600"
           } font-mono text-sm md:text-base lg:text-xl font-normal leading-normal text-center py-10`}
         >
-          No User Available
+          {showLoader ? (
+            <img src={loader} alt="loader" className="mx-auto" />
+          ) : (
+            "No User Available"
+          )}
         </p>
       </main>
     );
   }
 
+  // If userData is available, display user information
   return (
     <main
-      className={`w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto  rounded-lg ${
-        darkMode ? "bg-blue-900" : " bg-white "
-      }  shadow-xl mt-5`}
+      className={`w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto rounded-lg ${
+        darkMode ? "bg-blue-900" : "bg-white"
+      } shadow-xl mt-5`}
     >
       <section className="flex flex-col w-full md:w-11/12 justify-between mx-auto px-5 py-10">
         <div className="flex items-center md:gap-5 lg:gap-7">
-          <div className="">
+          <div>
             <img
-              src={userData.avatar_url} // Use the user's avatar URL
+              src={userData.avatar_url}
               alt="user_img"
               className="w-24 h-24 lg:w-32 lg:h-32 rounded-full object-cover"
             />
@@ -83,20 +58,24 @@ const UserCard = () => {
                   darkMode ? "text-white" : "text-blue-800"
                 } font-mono text-lg md:text-xl lg:text-2xl font-bold leading-normal`}
               >
-                {userData.login} {/* Display the user's login/username */}
+                {userData.name || userData.login}
               </p>
               <p className="text-blue-500 font-mono text-xs md:text-sm lg:text-lg font-normal leading-normal">
-                @{userData.login} {/* Display the user's username */}
+                @{userData.login}
               </p>
             </div>
             <div className="relative lg:left-20 xl:left-52">
               <p
                 className={`${
                   darkMode ? "text-white" : "text-blue-600"
-                } font-mono text-xs md:text-sm lg:text-lg font-normal leading-6 `}
+                } font-mono text-xs md:text-sm lg:text-lg font-normal leading-6`}
               >
-                Joined {new Date(userData.created_at).toDateString()}{" "}
-                {/* Display user's join date */}
+                Joined{" "}
+                {new Date(userData.created_at).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
               </p>
             </div>
           </div>
@@ -107,7 +86,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-600"
             } font-mono text-sm md:text-base lg:text-xl font-normal leading-6`}
           >
-            {userData.bio || "No bio available."} {/* Display user's bio */}
+            {userData.bio || "No bio available."}
           </p>
         </div>
       </section>
@@ -129,8 +108,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-900"
             } font-mono text-xs md:text-xl font-bold leading-normal uppercase`}
           >
-            {userData.public_repos}{" "}
-            {/* Display the number of public repositories */}
+            {userData.public_repos}
           </p>
         </div>
         <div>
@@ -146,7 +124,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-900"
             } font-mono text-xs md:text-xl font-bold leading-normal uppercase`}
           >
-            {userData.followers} {/* Display the number of followers */}
+            {userData.followers}
           </p>
         </div>
         <div>
@@ -162,8 +140,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-900"
             } font-mono text-xs md:text-xl font-bold leading-normal uppercase`}
           >
-            {userData.following}{" "}
-            {/* Display the number of people the user is following */}
+            {userData.following}
           </p>
         </div>
       </section>
@@ -175,8 +152,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-600"
             } font-mono text-sm md:text-lg font-normal leading-normal`}
           >
-            {userData.location || "Location not available."}{" "}
-            {/* Display user's location */}
+            {userData.location || "Location not available."}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -186,8 +162,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-600"
             } font-mono text-sm md:text-lg font-normal leading-normal`}
           >
-            {userData.twitter_username || "Twitter not available."}{" "}
-            {/* Display user's Twitter username */}
+            {userData.twitter_username || "Twitter not available."}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -197,8 +172,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-600"
             } font-mono text-sm md:text-lg font-normal leading-normal`}
           >
-            {userData.blog || "Website not available."}{" "}
-            {/* Display user's website */}
+            {userData.blog || "Website not available."}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -208,8 +182,7 @@ const UserCard = () => {
               darkMode ? "text-white" : "text-blue-600"
             } font-mono text-sm md:text-lg font-normal leading-normal`}
           >
-            {userData.company || "Company not available."}{" "}
-            {/* Display user's company */}
+            {userData.company || "Company not available."}
           </p>
         </div>
       </section>
