@@ -33,7 +33,7 @@ const SearchBar = () => {
         />
       </section>
       <section className="flex gap-5 items-center">
-        <p className="text-red-500 font-mono text-15 font-bold leading-normal">
+        <p className="text-red-500 font-mono text-xs font-bold leading-normal">
           {error ? " No results" : ""}
         </p>
         <button
