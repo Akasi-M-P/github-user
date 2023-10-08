@@ -26,7 +26,7 @@ const UserCard = () => {
           } font-mono text-sm md:text-base lg:text-xl font-normal leading-normal text-center py-10`}
         >
           {showLoader ? (
-            <img src={loader} alt="loader" className="mx-auto" />
+            <img src={loader} alt="loader" className="mx-auto rounded-full" />
           ) : (
             "No User Available"
           )}

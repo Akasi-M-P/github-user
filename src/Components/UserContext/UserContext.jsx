@@ -39,6 +39,7 @@ export const UserProvider = ({ children }) => {
     } finally {
       setLoading(false); // Set loading back to false after the request is complete
       setShowLoader(false); // Hide the loader
+      setUserName(""); // Set the user name
     }
   };
 
