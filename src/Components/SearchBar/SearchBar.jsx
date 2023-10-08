@@ -13,8 +13,8 @@ const SearchBar = () => {
     <main
       className={
         darkMode
-          ? "w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 flex items-center justify-between mx-auto rounded-lg bg-blue-900 shadow-md p-4 mt-6"
-          : "w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 flex items-center justify-between mx-auto rounded-lg bg-white shadow-md p-4 mt-6"
+          ? "w-full md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 flex items-center justify-between mx-auto rounded-lg bg-blue-900 shadow-md p-2 mt-6"
+          : "w-full md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 flex items-center justify-between mx-auto rounded-lg bg-white shadow-md p-2 mt-6"
       }
     >
       <section className="flex gap-5 items-center w-3/4">
@@ -27,13 +27,13 @@ const SearchBar = () => {
           placeholder="Search Github username..."
           className={
             darkMode
-              ? "w-11/12 h-8 focus:outline-none text-white font-mono text-xs md:text-base lg:text-xl font-normal leading-6 bg-blue-900"
-              : "w-11/12 h-8 focus:outline-none text-black font-mono text-xs md:text-base lg:text-xl font-normal leading-6"
+              ? "w-10/12 h-8 focus:outline-none text-white font-mono text-xs md:text-base lg:text-xl font-normal leading-6 bg-blue-900"
+              : "w-10/12 h-8 focus:outline-none text-black font-mono text-xs md:text-base lg:text-xl font-normal leading-6"
           }
         />
       </section>
-      <section className="flex gap-5 items-center">
-        <p className="text-red-500 font-mono text-xs font-thin leading-normal">
+      <section className="flex gap-2 items-center">
+        <p className="text-red-500 font-mono text-xs w-20">
           {error ? " No results" : ""}
         </p>
         <button

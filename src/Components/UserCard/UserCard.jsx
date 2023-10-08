@@ -16,7 +16,7 @@ const UserCard = () => {
   if (!userData) {
     return (
       <main
-        className={`w-11/12 md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto  rounded-lg ${
+        className={`w-full md:w-11/12 lg:w-10/12 2xl:lg:w-9/12 mx-auto  rounded-lg ${
           darkMode ? "bg-blue-900" : " bg-white "
         }  shadow-xl mt-5`}
       >
