@@ -9,6 +9,7 @@ const SearchBar = () => {
   const { error, userName, handleUserName, setUserName } =
     useContext(UserContext);
 
+
   return (
     <main
       className={

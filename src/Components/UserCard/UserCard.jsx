@@ -10,7 +10,7 @@ import loader from "../../assets/Infinity-0.7s-71px.svg";
 const UserCard = () => {
   // Get the darkMode and userData from the respective contexts
   const { darkMode } = useContext(ThemeContext);
-  const { userData, showLoader } = useContext(UserContext);
+  const { userData, showLoader, truncateBio } = useContext(UserContext);
 
   // If userData is not available, display a loading message or "No User Available"
   if (!userData) {
@@ -84,9 +84,9 @@ const UserCard = () => {
           <p
             className={`${
               darkMode ? "text-white" : "text-blue-600"
-            } font-mono text-sm md:text-base lg:text-xl font-normal leading-6`}
+            } font-mono text-xs md:text-base lg:text-xl font-normal leading-6`}
           >
-            {userData.bio || "No bio available."}
+            {truncateBio(userData.bio || "No bio available.", 15)}
           </p>
         </div>
       </section>
@@ -150,7 +150,7 @@ const UserCard = () => {
           <p
             className={`${
               darkMode ? "text-white" : "text-blue-600"
-            } font-mono text-sm md:text-lg font-normal leading-normal`}
+            } font-mono text-xs md:text-lg font-normal leading-normal`}
           >
             {userData.location || "Location not available."}
           </p>
@@ -160,7 +160,7 @@ const UserCard = () => {
           <p
             className={`${
               darkMode ? "text-white" : "text-blue-600"
-            } font-mono text-sm md:text-lg font-normal leading-normal`}
+            } font-mono text-xs md:text-lg font-normal leading-normal`}
           >
             {userData.twitter_username || "Twitter not available."}
           </p>
@@ -170,7 +170,7 @@ const UserCard = () => {
           <p
             className={`${
               darkMode ? "text-white" : "text-blue-600"
-            } font-mono text-sm md:text-lg font-normal leading-normal`}
+            } font-mono text-xs md:text-lg font-normal leading-normal`}
           >
             {userData.blog || "Website not available."}
           </p>
@@ -180,7 +180,7 @@ const UserCard = () => {
           <p
             className={`${
               darkMode ? "text-white" : "text-blue-600"
-            } font-mono text-sm md:text-lg font-normal leading-normal`}
+            } font-mono text-xs md:text-lg font-normal leading-normal`}
           >
             {userData.company || "Company not available."}
           </p>

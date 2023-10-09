@@ -43,6 +43,16 @@ export const UserProvider = ({ children }) => {
     }
   };
 
+  const truncateBio = (bio, limit) => {
+  const words = bio.split(" ");
+  if (words.length > limit) {
+    return words.slice(0, limit).join(" ") + " ...";
+  }
+  return bio;
+};
+
+
+
   // Provide the user data and related functions to the context
   return (
     <UserContext.Provider
@@ -57,6 +67,7 @@ export const UserProvider = ({ children }) => {
         setError, // Set error state
         setUserName, // Set username state
         showLoader, // Show loader state
+        truncateBio // Truncate bio
       }}
     >
       {children} {/* Render the child components */}
